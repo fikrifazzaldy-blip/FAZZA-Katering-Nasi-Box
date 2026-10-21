@@ -1,0 +1,6 @@
+{
+  "name": "FAZZA FOOD - Katering & Nasi Box Gandrungmangu Cilacap",
+  "description": "Layanan pemesanan katering online profesional FAZZA FOOD di Karanggintung Gandrungmangu, Karangpucung, dan sekitarnya (Cilacap) untuk nasi box, prasmanan, hajatan, dan pengajian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
