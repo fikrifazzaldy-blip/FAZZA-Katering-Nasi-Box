@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import { Order, OrderStatus, MenuItem, CateringPackage, EventType, MenuCategory } from '../types';
+import { ASSET_IMAGES } from '../assets/imagesMap';
 import { formatRupiah, formatIndonesianDate, formatIndonesianDateTime, createWhatsAppUrl } from '../utils/formatters';
 import {
   X,
@@ -86,7 +87,7 @@ export const AdminDashboard: React.FC = () => {
     category: 'nasi_box',
     description: '',
     minOrder: 5,
-    image: '/src/assets/images/nasi_box_ayam_goreng_1792497724385.jpg',
+    image: ASSET_IMAGES.nasiAyamGoreng,
     available: true,
   });
 
@@ -101,7 +102,7 @@ export const AdminDashboard: React.FC = () => {
     minPortion: 10,
     description: '',
     inclusions: 'Nasi Pulen, Lauk Utama, Sayur Segar, Air Mineral',
-    image: '/src/assets/images/nasi_box_ayam_bakar_1792497725252.jpg',
+    image: ASSET_IMAGES.nasiAyamBakar,
     available: true,
   });
 
@@ -214,7 +215,7 @@ export const AdminDashboard: React.FC = () => {
         category: 'nasi_box',
         description: '',
         minOrder: 5,
-        image: '/src/assets/images/nasi_box_ayam_goreng_1792497724385.jpg',
+        image: ASSET_IMAGES.nasiAyamGoreng,
         available: true,
       });
     }
@@ -259,7 +260,7 @@ export const AdminDashboard: React.FC = () => {
         minPortion: 10,
         description: '',
         inclusions: 'Nasi Pulen, Lauk Utama, Sayur Segar, Air Mineral',
-        image: '/src/assets/images/nasi_box_ayam_bakar_1792497725252.jpg',
+        image: ASSET_IMAGES.nasiAyamBakar,
         available: true,
       });
     }

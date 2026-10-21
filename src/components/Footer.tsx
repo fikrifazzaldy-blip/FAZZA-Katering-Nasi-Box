@@ -1,5 +1,6 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
+import { ASSET_IMAGES } from '../assets/imagesMap';
 import { ShieldCheck, Heart } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -13,7 +14,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img
-                src="/src/assets/images/young_chef_profile_1792499414113.jpg"
+                src={ASSET_IMAGES.youngChef}
                 alt="Chef FAZZA FOOD"
                 className="w-10 h-10 rounded-full object-cover border border-amber-300/40"
               />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
+import { ASSET_IMAGES } from '../assets/imagesMap';
 import { TESTIMONIALS_SAMPLE } from '../data/initialData';
 import { Award, ShieldCheck, HeartHandshake, Star, Quote } from 'lucide-react';
 
@@ -62,7 +63,7 @@ export const AboutAndTestimonials: React.FC = () => {
               <div className="bg-white/10 border border-white/15 rounded-2xl p-5 backdrop-blur-md flex items-center gap-4">
                 <div className="relative shrink-0">
                   <img
-                    src="/src/assets/images/young_chef_profile_1792499414113.jpg"
+                    src={ASSET_IMAGES.youngChef}
                     alt="Chef FAZZA FOOD"
                     className="w-20 h-20 rounded-full object-cover border-2 border-amber-300/80 shadow-lg"
                   />

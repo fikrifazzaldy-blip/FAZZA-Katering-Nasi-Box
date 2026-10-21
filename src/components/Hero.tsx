@@ -1,4 +1,5 @@
 import React from 'react';
+import { ASSET_IMAGES } from '../assets/imagesMap';
 import { UtensilsCrossed, Clock, Sparkles, CheckCircle, ArrowRight } from 'lucide-react';
 
 interface HeroProps {
@@ -75,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onOrderNow, onExploreMenu }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden border border-orange-950/10 shadow-2xl bg-stone-100 aspect-[4/3] lg:aspect-auto lg:h-[480px]">
               <img
-                src="/src/assets/images/hero_catering_spread_1792497723756.jpg"
+                src={ASSET_IMAGES.hero}
                 alt="Meja jamuan katering nusantara FAZZA FOOD dengan nasi tumpeng, ayam goreng, sate dan nasi box"
                 className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                 loading="eager"
@@ -87,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ onOrderNow, onExploreMenu }) => {
               <div className="absolute top-4 left-4 bg-[#FCFAF7]/95 backdrop-blur-md p-2.5 rounded-2xl shadow-lg border border-[#EDE3D8] flex items-center gap-3 max-w-[240px]">
                 <div className="relative shrink-0">
                   <img
-                    src="/src/assets/images/young_chef_profile_1792499414113.jpg"
+                    src={ASSET_IMAGES.youngChef}
                     alt="Chef FAZZA FOOD"
                     className="w-12 h-12 rounded-full object-cover border-2 border-[#E8C2AC] shadow-xs"
                   />

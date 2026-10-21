@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import { ASSET_IMAGES } from '../assets/imagesMap';
 import { ShoppingBag, Menu as MenuIcon, X, ShieldCheck } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
@@ -34,7 +35,7 @@ export const Navbar: React.FC = () => {
           >
             <div className="relative shrink-0">
               <img
-                src="/src/assets/images/young_chef_profile_1792499414113.jpg"
+                src={ASSET_IMAGES.youngChef}
                 alt="Chef FAZZA FOOD"
                 className="w-12 h-12 rounded-full object-cover border-2 border-[#E8C2AC] shadow-sm group-hover:scale-105 transition-transform bg-[#F5EDE4]"
               />
